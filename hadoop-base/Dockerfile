@@ -3,7 +3,7 @@ MAINTAINER krejcmat <matejkrejci@gmail.com>
 
 # install openssh-server
 RUN apt-get update && \
-apt-get install -y curl openssh-server nano && \
+apt-get install -y curl openssh-server nano  && \
 apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && \
 rm -rf /var/lib/{apt,dpkg,cache,log}/
 
