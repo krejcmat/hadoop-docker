@@ -17,7 +17,9 @@ mv /tmp/yarn-site.xml $HADOOP_INSTALL/etc/hadoop/yarn-site.xml && \
 mv /tmp/stop-hadoop.sh ~/stop-hadoop.sh && \
 mv /tmp/start-hadoop.sh ~/start-hadoop.sh && \
 mv /tmp/run-wordcount.sh ~/run-wordcount.sh && \ 
-mv /tmp/start-ssh-serf.sh ~/start-ssh-serf.sh 
+mv /tmp/start-ssh-serf.sh ~/start-ssh-serf.sh  && \ 
+mv /tmp/configure-members.sh ~/configure-members.sh 
+
 
 RUN chmod +x ~/start-hadoop.sh && \
 chmod +x ~/run-wordcount.sh && \
