@@ -1,8 +1,8 @@
 # hadoop-docker
 
-Quickly build arbitrary size Hadoop Cluster based on Docker
+Quickly build arbitrary size Hadoop cluster based on Docker
 ------
-Core of this project is based on [kiwenlau](https://github.com/kiwenlau) and [Serf](https://github.com/jai11/docker-serf) docker file. Hadoop version is upgraded and its configuration is partly rewritten. In addition HBase support has been added. As UNIX system is used [Debian wheezy minimalistic](https://hub.docker.com/r/philcryer/min-wheezy/) instead of Ubuntu. Hadoop is setup as fully distributed cluster with YARN. As handler of HBase native Zookeeper is used. For large clusters is highly recomanded to use external Zookeeper management(not include). Size of docker images was reduced but room for optimizing  still there. [Squash utility](https://github.com/jwilder/docker-squash) during optimization reduced only approx. 30Mb. The method is not used due to losing information of docker image layers. 
+Core of this project is based on [kiwenlau](https://github.com/kiwenlau) and [Serf](https://github.com/jai11/docker-serf) docker file. Hadoop version is upgraded and its configuration is partly rewritten.  As UNIX system is used [Debian wheezy minimalistic](https://hub.docker.com/r/philcryer/min-wheezy/) instead of Ubuntu. Hadoop is setup as distributed cluster with YARN. Size of docker images was reduced but room for optimizing  still there. [Squash utility](https://github.com/jwilder/docker-squash) during optimization reduced only approx. 30Mb. The method is not used due to losing information of docker image layers. 
 
 Tip: See other Hadoop based project in [kjrecmat](https://github.com/krejcmat) repository.
 

@@ -3,6 +3,7 @@ MAINTAINER krejcmat <matejkrejci@gmail.com>
 
 # move all confugration files into container
 ADD files/hadoop/* /tmp/
+ADD files/init/* /tmp/
 
 ENV HADOOP_INSTALL /usr/local/hadoop
 
@@ -20,10 +21,11 @@ mv /tmp/run-wordcount.sh ~/run-wordcount.sh && \
 mv /tmp/start-ssh-serf.sh ~/start-ssh-serf.sh  && \ 
 mv /tmp/configure-members.sh ~/configure-members.sh 
 
-
 RUN chmod +x ~/start-hadoop.sh && \
+chmod +x ~/stop-hadoop.sh && \
 chmod +x ~/run-wordcount.sh && \
 chmod +x ~/start-ssh-serf.sh && \
+chmod +x ~/configure-members.sh  && \
 chmod 1777 tmp
 
 # format namenode
