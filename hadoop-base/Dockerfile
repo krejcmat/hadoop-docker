@@ -8,9 +8,9 @@ apt-get clean -y && apt-get autoclean -y && apt-get autoremove -y && \
 rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 # Java Version
-ENV JAVA_VERSION_MAJOR 7
-ENV JAVA_VERSION_MINOR 60
-ENV JAVA_VERSION_BUILD 19
+ENV JAVA_VERSION_MAJOR 8
+ENV JAVA_VERSION_MINOR 111
+ENV JAVA_VERSION_BUILD 14
 ENV JAVA_PACKAGE       jdk
 
 # Download and unarchive Java
@@ -58,11 +58,11 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys && \
 mv /usr/local/ssh_config ~/.ssh/config && \
 sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
-#install hadoop 2.71
-RUN wget -q -o out.log -P /tmp http://www.trieuvan.com/apache/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz && \
-tar xzf /tmp/hadoop-2.7.1.tar.gz -C /usr/local && \
-rm /tmp/hadoop-2.7.1.tar.gz && \
-mv /usr/local/hadoop-2.7.1 /usr/local/hadoop && \
+#install hadoop 2.7.3
+RUN wget -q -o out.log -P /tmp http://www.trieuvan.com/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz && \
+tar xzf /tmp/hadoop-2.7.3.tar.gz -C /usr/local && \
+rm /tmp/hadoop-2.7.3.tar.gz && \
+mv /usr/local/hadoop-2.7.3 /usr/local/hadoop && \
 mv /usr/local/bashrc ~/.bashrc && \
 mv /usr/local/hadoop-env.sh /usr/local/hadoop/etc/hadoop/hadoop-env.sh
 

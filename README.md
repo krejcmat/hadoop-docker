@@ -7,11 +7,11 @@ Core of this project is based on [kiwenlau](https://github.com/kiwenlau) and [Se
 Tip: See other Hadoop based project in [kjrecmat](https://github.com/krejcmat) repository.
 
 ######Version of products
-| system          | version    | 
-| ----------------|:----------:| 
-| Hadoop          | 2.71       |
-| Java            | JDK 7.60.19|
-| Serf            | 0.7.0      |
+| system          | version     | 
+| ----------------|:-----------:| 
+| Hadoop          | 2.7.3       |
+| Java            | JDK 8.111.14|
+| Serf            | 1.3.9       |
 
 
 ######See file structure of project 
