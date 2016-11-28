@@ -1,5 +1,5 @@
-FROM krejcmat/hadoop-dnsmasq:latest
-MAINTAINER krejcmat <matejkrejci@gmail.com>
+FROM sebge2/hadoop-dnsmasq:latest
+MAINTAINER sgerard <sgerard@emasphere.com>
 
 # install openssh-server
 RUN apt-get update && \
