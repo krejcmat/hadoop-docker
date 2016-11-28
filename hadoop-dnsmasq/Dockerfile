@@ -1,5 +1,5 @@
 FROM philcryer/min-wheezy:latest
-MAINTAINER krejcmat <matejkrejci@gmail.com>
+MAINTAINER sgerard <sgerard@emasphere.com>
 
 # init wheezy docker
 RUN echo 'deb http://ftp.cz.debian.org/debian stable main contrib'>> /etc/apt/sources.list && \  
